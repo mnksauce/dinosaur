@@ -43,7 +43,7 @@
       set_fact:
         pg_volumes:
           - '/opt/appdata/{{pgrole}}:/var/atlassian/application-data/jira'
-          - '{{path.stdout}}:{{path.stdout}}'!
+          - '{{path.stdout}}:{{path.stdout}}'
           - '/etc/localtime:/etc/localtime:ro'
 
     - name: 'Setting PG ENV'
