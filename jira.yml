@@ -51,6 +51,9 @@
         pg_env:
           PUID: '1000'
           PGID: '1000'
+          ATL_PROXY_NAME: '{{pgrole}}.{{domain.stdout}}'
+          ATL_PROXY_PORT: '443'
+          ATL_TOMCAT_SCHEME: 'https'
 
     # MAIN DEPLOYMENT #############################################################
     - name: 'Deploying {{pgrole}}'
